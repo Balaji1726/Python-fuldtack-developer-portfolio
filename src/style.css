@@ -1,0 +1,353 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+            --primary: #7c3aed; /* Vibrant Purple */
+            --primary-dark: #6d28d9;
+            --secondary: #06d6a0; /* Teal */
+            --accent: #ff6b6b; /* Coral */
+            --accent-light: #ff9e9e;
+            --light: #ffffff;
+            --dark: #1e293b;
+            --darker: #0f172a;
+            --darkest: #020617;
+            --gray: #94a3b8;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            --glow: 0 0 20px rgba(124, 58, 237, 0.3);
+        }
+
+body{
+    color: white;
+    font-family: sans-serif;
+    background: linear-gradient(135deg, var(--darkest) 0%, var(--darker) 50%, var(--dark) 100%);
+    color: var(--light);
+    overflow-x: hidden;
+    line-height: 1.6;
+
+}
+.logo{
+    height: 40px;
+}
+.top{
+    margin-top: 25px;
+}
+.body-1{
+    margin-top: 300px;
+}
+.nav-link{
+    font-size: 25px;
+}
+.nav-link:hover{
+
+}
+.nav-item{
+    padding-left: 15px;
+}
+#name{
+    color: #0d6efd;
+}
+.details{
+    font-size: 60px;
+    margin-top: -90px;
+}
+.btn-resume{
+    display: flex;
+    justify-content: center;
+}
+.btn-1{
+    width: 150px;
+    border-radius: 50px;
+    color: #ffffff;
+    background: linear-gradient(45deg , blue ,rgb(220, 15, 15) );
+    background-size: 300% 100%;
+    border: none;
+    background-position: 0% 0%;
+    transition: all 0.5s ease-in-out;
+}
+.btn-1:hover{
+    color: white;
+    background-position: 100% 0%;
+    transform: translateY(-2px);
+}
+.sub{
+    text-align: center;
+}
+.subtittle{
+    display: inline-block;
+    position: relative;
+    margin-top: 350px;
+    margin-bottom: 50px;
+    padding-bottom: 8px;
+}
+.subtittle::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: #0d6efd;
+    transition: width 0.4s ease;
+}
+.subtittle:hover::before{
+    width: 100%;
+}
+.social{
+    font-size: 30px;
+}
+.icons{
+    color: white;
+}
+.content_{
+    text-indent: 4em;
+    padding-top: 100px;
+}
+.img_{
+    width: 200px;
+}
+.details-1{
+    text-align: left;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    font-weight: 500;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr)) ;
+    gap: 80px;
+    justify-content: center;
+}
+.card_{
+    position: relative;
+    padding: 2rem;
+    background-color: #222429;
+    border-radius: 10px;
+    text-align: center;
+    height: 200px;
+    font-size: 50px;
+    overflow: hidden;
+    transition: transform 0.5s ease,box-shadow 0.3s ease ;
+    
+}
+.card_::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background: linear-gradient(to right, #0000ff, #ff0101);
+    transition: width 0.4s ease;
+}
+.card_:hover{
+    transform: translateY(-10px) ;
+    box-shadow: 0 5px 45px #2200ff67;
+}
+.card_:hover::before{
+    width: 100%;
+
+}
+.container_{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: #0d6efd;
+    border-radius: 10px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container_ .content .left-side{
+    width: 80%;
+    height: 350px;
+    position: relative;
+    font-size: 30px;
+}
+.contact-card{
+    background-color: #222429;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+.contact-details{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+}
+.name{
+    height: 50px;
+    width: 500px;
+}
+.mail{
+    margin-left: ;
+    height: 50px;
+    width: 500px;
+}
+.suggestions{
+    height: 150px;
+    width: 500px;
+}
+.submit{
+    width: auto;
+}
+.social_{
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+    transition: transform,0.5s;
+}
+.social_:hover{
+    transform: translateY(-5px);
+}
+.insta{background: linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.linkedin {
+    background-color: #0A66C2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* .github{
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+.footer-line{
+    align-items: center;
+    border: none;
+    height: 1px;
+    background-color: var(--gray);
+    margin: 10%;
+    width: 80%;
+}
+.copyright{
+    text-align: center;
+}
+
+
+
+
+@media (min-width: 360px) {
+.img-thumbnail{
+    width: 30%;
+    margin-left: 40px;
+}
+.img_{
+    width: 50%;
+    margin-left: 40px;
+}
+.details{
+    font-size: 30px;
+}
+.left-side{
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.details{
+    font-size: 30px;
+}
+}
+
+@media (min-width: 576px) {
+.img-thumbnail{
+    width: 50%;
+}
+}
+@media (min-width: 768px) {
+.img_{
+    width: 40%;
+}
+.details{
+    font-size: 30px;
+}
+}
+@media (min-width: 992px) {
+.img_{
+    width: 30%;
+}
+.details{
+    font-size: 40px;
+}
+}
+@media (min-width: 1200px) {
+.img_{
+    width: 30%;
+}
+.details{
+    font-size: 50px;
+}
+}
+@media (min-width: 1400px) {
+.img_{
+    width: 20%;
+}
+.details{
+    font-size: 60px;
+}
+}
+
+.bg-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .pulse-dots {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .dot {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: var(--secondary);
+            border-radius: 50%;
+            animation: pulse 3s ease-in-out infinite;
+            opacity: 0.5;
+        }
+        .dot-1 {
+            top: 20%;
+            left: 15%;
+            animation-delay: 0s;
+        }
+        .dot-2 {
+            top: 70%;
+            left: 85%;
+            animation-delay: 1s;
+        }
+        .dot-3 {
+            top: 40%;
+            left: 90%;
+            animation-delay: 2s;
+        }
+        .dot-4 {
+            top: 85%;
+            left: 10%;
+            animation-delay: 1.5s;
+        }
+        .dot-5 {
+            top: 10%;
+            left: 75%;
+            animation-delay: 2.5s;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.3;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 0.7;
+            }
+        }
